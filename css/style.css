@@ -12,3 +12,56 @@
   font-style: normal;
 }
 
+.header {
+	position: relative;
+
+}
+
+.header::before {
+		content: "";
+  		background-color: rgba(9, 12, 53, 0.45);
+		position: absolute;
+  		top: 0;
+  		right: 0;
+  		left: 0;
+  		bottom: 0; 
+	}
+
+/*--------------------------------ДО 680------------------------------*/
+@media (max-width:680px) {
+	body {
+		font-size: 93.75%;
+		margin: 0;
+	}
+
+	.container {
+		padding: 0 20px;
+		max-width: 100vw;
+	}
+
+	.header {
+		background: url("../images/football_767.jpg") no-repeat center;
+		padding-top:33px;
+	}
+
+
+
+
+
+
+}
+
+
+/*--------------------------------ОТ 681 ДО 960-------------------------*/
+@media (min-width:681px) and (max-width:960px) {
+	body {
+		font-size: 100%;
+	}
+}
+
+/*--------------------------------ОТ 961------------------------------*/
+@media (min-width:961px) {
+	body {
+		font-size: 125%;
+	}
+}
