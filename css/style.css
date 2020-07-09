@@ -72,6 +72,7 @@ body {
 /*---------------------Шапочка------------------*/
 	.header {
 		background: url("../images/football_767.jpg") no-repeat;
+		background-color: rgba(20, 14, 52);
 	}
 
 	.header_container {
@@ -219,8 +220,12 @@ body {
 	background: #f5f4f9;
 }
 
-.forWhom_div:nth-child(5) {
+.forWhom_article:nth-child(1) .forWhom_div:nth-child(5) {
 	background: #5e42b0;
+}
+
+.forWhom_article:nth-child(2) .forWhom_div:nth-child(5) {
+	background: #090c35;
 }
 
 
