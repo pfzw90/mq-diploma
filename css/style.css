@@ -83,7 +83,7 @@ body {
 		align-items: center;
 	}
 	
-	.logo_a {
+	.header .logo_a {
 		margin-bottom: 135px;
 	}
 
@@ -284,7 +284,7 @@ body {
 
 .usageItem_picture {
 	max-width: 100%;
-	margin-bottom: -27px;
+	margin-bottom: -55px;
 }
 
 .usageItem_header {
@@ -343,8 +343,7 @@ body {
 }
 
 .footer_container {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 100px 20px 10px 20px;
 	box-sizing: border-box;
 	position: relative;
 	width:100%;
@@ -378,12 +377,27 @@ body {
 	border-radius: 13px;
 	width: 72px;
 	height: 72px;
+	margin-bottom: 58px;
+}
+
+.footer_header .h1 {
+	margin: 0;
+}
+.footer_header p {
+	text-transform: uppercase;
+	color: #9b8ec1;
+	font-size: 0.933rem;
+	margin: 0;
 }
 
 .footer_header svg {
 	width: 56px;
 	fill: #fff;
 	padding: 10px 8px;
+}
+
+.footer .logo_a {
+	margin-top: 80px;
 }
 
 /*--------------------------------ОТ 681 ДО 960-------------------------*/
