@@ -99,16 +99,20 @@ body {
 	.header .h1 {
 		font-size: 1.867rem;
 		line-height: 2.09rem;
-		text-align:left;
+		position: relative;
+		display: flex;
+		width:100%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
 		margin: 0;
 		}
 
-	.header_container .h1:nth-child(2) {
+	.header_container .h1 span:nth-child(1) {
 		margin-bottom:30px;
-		align-self: flex-start;
 	}
 
-	.header_container .h1:nth-child(3) {
+	.header_container .h1 span:nth-child(2) {
 		max-width: calc(100% - 44px);
 		align-self: flex-end;
 	}
