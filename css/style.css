@@ -116,6 +116,10 @@ body {
 	font-weight: bold;
 }
 
+img {
+	display: block;
+}
+
 
 /*---------------------Мэйн1------------------*/
 
@@ -1060,5 +1064,5 @@ body {
 
 	max-width: calc(50% + 172px);
 	right: 0;
-}
+	}
 }
