@@ -129,13 +129,11 @@ body {
 .h2 {
 
 	font-size: 3.33rem;
-	line-height: 4rem;
 	color: #e7e7e7;
 	margin: 25px 0px;
 }
 
 .h3 {
-	line-height: 2.3rem;
 	font-size: 1.53rem;
 	text-transform: uppercase;
 	margin: 0;
@@ -223,11 +221,13 @@ body {
 
 /*---------------------Мэйн2------------------*/
 
-
+.usage_section {
+	width:100%;
+	position: relative;
+}
 
 .usageItem_header {
 	max-width: 100%;
-	z-index: 1;
 	position: relative;
 	box-sizing: border-box;
 }
@@ -328,8 +328,8 @@ body {
 }
 
 
-/*--------------------------------ДО 680------------------------------*/
-@media (max-width:680px) {
+/*--------------------------------ДО 640------------------------------*/
+@media (max-width:640px) {
 	body {
 		font-size: 93.75%;
 	}
@@ -364,10 +364,6 @@ body {
 
 	.logo {
 		width:9.5rem;
-	}
-
-	.logo_small {
-		width: 4rem;
 	}
 
 	.app_links {
@@ -439,7 +435,6 @@ body {
 
 	.forWhom_content {
 		margin: 1.93rem 0rem 0rem 0rem;
-		line-height: 1.2rem;
 	}
 
 
@@ -450,9 +445,13 @@ body {
 		margin-bottom: 5.5rem;
 	}
 
-	.usageItem_picture {
+	.usagePicture_container {
 		max-width: 100%;
 		margin-bottom: -3.93rem;
+	}
+
+	.usageItem_picture {
+		max-width:100%;
 	}
 
 	.number_container {
@@ -543,9 +542,6 @@ body {
 		width: 12.81rem;
 	}
 
-	.logo_small {
-		width: 3.5rem;
-	}
 
 	.app_links {
 		/*font-size: 0.53rem;*/
@@ -589,10 +585,10 @@ body {
 	}
 
 	.forWhom_article:nth-child(2)::before {
-		right: 0;
 		top: 1.19rem;
-		width: 436px;
+		right: 0;
 		height: 565px;
+		width: 436px;
 		background-image: url('../images/basketballer_436.png');
 	}
 
@@ -650,7 +646,6 @@ body {
 	
 	.forWhom_content {
 	
-		line-height: 1.2rem;
 		margin-top: 2rem;
 	}
 
@@ -662,9 +657,13 @@ body {
 		margin-bottom: 4.69rem;
 	}
 
-	.usageItem_picture {
+	.usagePicture_container {
 		max-width: 100%;
 		margin-bottom: -55px;
+	}
+
+	.usageItem_picture {
+		max-width: 100%;
 	}
 
 	.usageItem_header {
@@ -706,7 +705,7 @@ body {
 
 	
 	.footer_container {
-			padding: 7.14rem 1.43rem 0.72rem 1.43rem;
+			padding: 7.81rem 1.43rem 0.72rem 1.43rem;
 	}
 
 	.footer_header a {
@@ -734,9 +733,332 @@ body {
 
 }
 
+
+
+@media (min-width:641px) and (max-width:740px) {
+
+.forWhom_article:nth-child(2) .forWhom_div:nth-child(2) {
+	padding-top: 10rem;
+}
+}
+
+
+
 /*--------------------------------ОТ 961------------------------------*/
 @media (min-width:961px) {
 	body {
 		font-size: 125%;
 	}
+
+/*---------------------Шапочка------------------*/
+	.header {
+		background-image: url("../images/football_1920.jpg");	
+		background-position: center;
+		width:100%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding:0rem 10rem;	
+
+	}
+
+	.header_container {
+		padding-top:2.4rem;
+		padding-bottom:5.75rem;
+		width:100%;
+		max-width: 76.5rem;
+		}
+
+	.header .h1 {
+		font-size: 4.5rem;
+		width: 100%;
+	}
+
+	.header .h1 span:nth-child(2) {
+		display: block;
+		text-align: right;
+	}
+
+
+	.header .logo_a {
+		margin-bottom: 14.75rem;
+	}
+
+	.logo {
+		width: 9.55rem;
+	}
+
+
+	.app_links {
+		width: 100%;
+		font-size: 0.7rem;
+		margin-top: 11.15rem;
+		flex-direction: row;
+		justify-content: center;
+
+	} 
+
+	.app_link {
+		height: 4rem;
+		width: 15.5rem;
+		border-radius: 2rem;
+	}
+
+	.app_link:nth-child(1) {
+		margin-right: 2.5rem;
+	}
+
+	.app_link_icon {
+		height: 2.5rem;
+		margin-right: 1.5rem;
+	}
+
+
+
+
+	/*---------------------Мэйн1------------------*/
+
+	.forWhom_section {
+
+	position: relative;
+	}
+
+
+
+	.forWhom_article:nth-child(1)::before {
+		top: 1rem;
+		left: calc(10rem + (((100% - 20rem) / 2 ) - 566px));
+		width: 566px;
+		height: 908px;
+		background-image: url('../images/footballer_566.png');
+	}
+
+	.forWhom_article:nth-child(2)::before {
+		top: 1rem;
+		right: calc((6.8rem) + (((100% - 20rem) / 2 ) - 41.85rem));
+		height: 815px;
+		width: 991px;
+		background-image: url('../images/basketballer_991.png');
+	}
+
+	.forWhom_article .h2 {
+		font-size: 5rem;
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		width:100%;
+		margin: 0;
+	}
+
+	.forWhom_article:nth-child(1) .h2 {
+		padding: 5.85rem 10rem 0rem calc(50% + 2.25rem);
+	}
+
+	.forWhom_article:nth-child(2) .h2 {
+		padding: 5.85rem calc(50% + 2.25rem) 0rem 10rem;
+	}
+
+
+	.forWhom_div {
+		width:100%;
+		display: flex;
+		flex-direction: column;
+		position:relative;
+		z-index: 0;
+		box-sizing: border-box;
+	}
+
+
+	.forWhom_article:nth-child(1) .forWhom_div {
+		padding: 2.5rem 10rem 2.5rem calc(50% + 2.25rem);
+	}
+
+
+	.forWhom_article:nth-child(2) .forWhom_div {
+		padding: 2.5rem calc(50% + 2.25rem) 2.5rem 10rem;
+	}
+
+	.forWhom_article:nth-child(1) .forWhom_div:nth-child(2), .forWhom_article:nth-child(2) .forWhom_div:nth-child(2) {
+		padding-top: 5.5rem;
+	}
+		
+
+	.forWhom_header .h3 {
+		font-size: 1.8rem;
+
+	}
+
+	.forWhom_header .number {
+		font-size: 1.125rem;
+	}
+
+	
+	.forWhom_content {
+		margin-top: 1.5rem;
+	}
+
+
+
+	/*---------------------Мэйн2------------------*/
+
+	.usage_article {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		}
+
+	.usage_article:nth-child(2)  {
+		flex-direction: row-reverse;
+	}
+
+
+	.usagePicture_container {
+		display: block;
+		width: 50%;
+		position: relative;
+	}
+
+	.usageItem_picture {
+		max-width: 100%;
+	}
+
+
+	.usageText_container {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.usageItem_header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 8.4rem;
+	
+	}
+
+	.usage_article:nth-child(odd) .usageItem_header .number_container {
+			margin-left: -4.2rem;
+	}	
+
+	.usage_article:nth-child(even) .usageItem_header {
+			
+		justify-content: flex-end;
+	}
+
+	.usage_article:nth-child(even) .usageItem_header .number_container {
+
+		order: 2;
+		margin-right: -4.2rem;
+	}
+
+
+	.number_container {
+		min-width: 8.4rem;
+		min-height: 8.4rem;
+	}
+
+
+	.usageItem_header .number {
+		font-size: 1.2rem;
+	}
+
+	.usageItem_header .h3 {
+		font-size: 4rem;
+	}
+
+	.usage_article:nth-child(odd) .h3 {
+			padding-left: 2rem;
+			padding-right: 10rem;
+	}
+
+	.usage_article:nth-child(even) .h3 {
+			padding-right: 2rem;
+			padding-left: 10rem;
+			text-align: right;
+	}
+
+
+	.usage_content {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		width:100%;
+		font-size: 1.2rem;
+		margin-top: 3.5rem;
+	}
+
+
+
+	.usage_article:nth-child(odd) .usage_content {
+		padding-right: 10rem;
+		padding-left: 6.2rem;
+	}
+
+	.usage_article:nth-child(even) .usage_content {
+		padding-right: 6.2rem;
+		padding-left: 10rem;
+		text-align: right;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*---------------------Футер------------------*/
+	
+	.footer {
+		background-image: url("../images/game_1280.jpg");
+	}
+
+	
+	.footer_container {
+			padding: 7.81rem 1.43rem 0.72rem 1.43rem;
+	}
+
+	.footer_header a {
+		border-radius: 1.69rem;
+		width: 8.56rem;
+		height: 8.56rem;
+		margin-bottom: 4.14rem;
+	}
+
+	.footer_header .h1 {
+		font-size: 5rem;
+	}
+
+	.footer_header p {
+		font-size: 2.25rem;
+	}
+
+	.footer_header svg {
+		width: 6.44rem;
+	}
+
+	.footer .logo_a {
+		margin-top: 5.71rem;
+	}
+}
+
+
+
+@media (min-width:961px) and (max-width:1450px) {
+
+.forWhom_article:nth-child(2)::before {
+
+	max-width: calc(50% + 172px);
+	right: 0;
+}
 }
