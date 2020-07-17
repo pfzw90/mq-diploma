@@ -260,7 +260,7 @@ img {
 
 .footer::before {
 		content: "";
-  		background-color: rgba(20, 14, 52, 0.9);
+  		background-color: rgba(10, 14, 52, 0.9);
 		position: absolute;
   		top: 0;
   		right: 0;
@@ -295,7 +295,7 @@ img {
 	align-items: center;
 }
 
-.footer_header a {
+.footer .download_link {
 	display: flex;
 	position: relative;
 	align-items: center;
@@ -303,14 +303,14 @@ img {
 	background: #50369a linear-gradient(to bottom, #7756d7, #50369a);
 }
 
-.footer_header svg {
+.footer .download_link_icon {
 	fill: #fff;
 	display: block;
 	position: relative;
 }
 
 
-.footer_header p {
+.footer p {
 		text-transform: uppercase;
 		color: #9b8ec1;
 		margin: 0;
@@ -485,7 +485,7 @@ img {
 			padding: 7.14rem 1.43rem 0.72rem 1.43rem;
 	}
 
-	.footer_header a {
+	.footer a {
 		border-radius: 0.93rem;
 		width: 5.14rem;
 		height: 5.14rem;
@@ -496,7 +496,7 @@ img {
 		font-size: 0.933rem;
 	}
 
-	.footer_header svg {
+	.footer svg {
 		width: 4rem;
 	}
 
@@ -712,7 +712,7 @@ img {
 			padding: 7.81rem 1.43rem 0.72rem 1.43rem;
 	}
 
-	.footer_header a {
+	.footer .download_link {
 		border-radius: 1.69rem;
 		width: 8.56rem;
 		height: 8.56rem;
@@ -727,7 +727,7 @@ img {
 		font-size: 2.25rem;
 	}
 
-	.footer_header svg {
+	.footer .download_link_icon {
 		width: 6.44rem;
 	}
 
@@ -797,11 +797,15 @@ img {
 	.app_links {
 		width: 100%;
 		font-size: 0.7rem;
-		margin-top: 11.15rem;
+
 		flex-direction: row;
 		justify-content: center;
 
 	} 
+
+	.header .app_links  {
+		margin-top: 11.15rem;
+	}
 
 	.app_link {
 		height: 4rem;
@@ -927,6 +931,7 @@ img {
 
 	.usageItem_picture {
 		max-width: 100%;
+		min-width: 100%;
 	}
 
 
@@ -1011,16 +1016,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
 	/*---------------------Футер------------------*/
 	
 	.footer {
@@ -1029,30 +1024,46 @@ img {
 
 	
 	.footer_container {
-			padding: 7.81rem 1.43rem 0.72rem 1.43rem;
+			padding: 11.5rem 2rem 2.6rem 2rem;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
 	}
 
-	.footer_header a {
+	.footer_header {
+		width: auto;
+		align-items: flex-start;
+		margin-left: 1.75rem;
+	}
+
+	.footer .download_link {
 		border-radius: 1.69rem;
-		width: 8.56rem;
-		height: 8.56rem;
-		margin-bottom: 4.14rem;
+		width: 6.75rem;
+		height: 6.75rem;
 	}
 
 	.footer_header .h1 {
-		font-size: 5rem;
-	}
+		font-size: 4rem;
+		}
 
 	.footer_header p {
-		font-size: 2.25rem;
+		font-size: 1.5rem;
+
 	}
 
-	.footer_header svg {
-		width: 6.44rem;
+	.footer .download_link_icon {
+		width: 5rem;
 	}
+
+
+	.footer .app_links  {
+		margin-top: 7.5rem;
+	}
+
 
 	.footer .logo_a {
-		margin-top: 5.71rem;
+		margin-top: 13.1rem;
 	}
 }
 
