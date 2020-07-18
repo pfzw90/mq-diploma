@@ -485,7 +485,7 @@ img {
 			padding: 7.14rem 1.43rem 0.72rem 1.43rem;
 	}
 
-	.footer a {
+	.footer .download_link {
 		border-radius: 0.93rem;
 		width: 5.14rem;
 		height: 5.14rem;
@@ -496,7 +496,7 @@ img {
 		font-size: 0.933rem;
 	}
 
-	.footer svg {
+	.footer .download_link_icon {
 		width: 4rem;
 	}
 
@@ -725,6 +725,8 @@ img {
 
 	.footer_header p {
 		font-size: 2.25rem;
+		display: block;
+		text-align: center;
 	}
 
 	.footer .download_link_icon {
