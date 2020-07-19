@@ -199,7 +199,7 @@ img {
 	margin-right: 0.625rem;
 }
 
-.forWhom_div:nth-child(4) .number {
+.forWhom_article:nth-child(2) .forWhom_div:nth-child(4) .number {
 	color: #8765dd;
 }
 
@@ -246,13 +246,13 @@ img {
 	background: #5e42b0;
 }
 
-.usageItem_header .number {
+.usage_article .number {
 	color: #fff;
 	display: block;
 	position: relative;
 }
 
-.usageItem_header .number::after {
+.usage_article .number::after {
 	background: #8f7bc8;
 }
 
@@ -374,11 +374,14 @@ img {
 	
 		font-size: 0.57rem;
 		margin-top:6.358rem;
+		width: 100%;
 		flex-direction: column;
+		align-items: center;
 	} 
 
 	.app_link {
 		width: 100%;
+		max-width: 20rem;
 		border-radius: 1.22rem;
 		height: 2.5rem;
 		color: #fff;
@@ -461,15 +464,15 @@ img {
 	.number_container {
 		width: 5rem;
 		height: 5rem;
+		margin-left: 1.43rem;
 	}
 
-	.usageItem_header .h3 {
+	.usage_article .h3 {
 		margin: 1.93rem 0px;
 	}
 
-
-	.usageItem_header, .usage_content {
-		padding-left:1.43rem;
+	.usageText_container {
+		padding-left: 1.43rem;
 		padding-right: 1.43rem;
 	}
 
@@ -548,19 +551,23 @@ img {
 
 
 	.app_links {
-		/*font-size: 0.53rem;*/
 		width: 100%;
 		font-size: 0.875rem;
-		margin-top:19rem;
+		margin-top: 19rem;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 
 	} 
 
 	.app_link {
 		height: 4rem;
 		width: calc(50% - 0.93rem);
+		max-width: 19.37rem;
 		border-radius: 2rem;
+	}
+
+	.app_link:nth-child(1) {
+		margin-right: 1.94rem;
 	}
 
 	.app_link_icon {
@@ -670,16 +677,11 @@ img {
 		max-width: 100%;
 	}
 
-	.usageItem_header {
-		z-index: 1;
-		position: relative;
-	}	
-
-	.usageItem_header .h3 {
+	.usage_article .h3 {
 		margin: 27px 0px;
 	}
 
-	.usageItem_header, .usage_content {
+	.usageText_container {
 		padding-left:3.5rem;
 		padding-right: 3.5rem;
 	}
@@ -687,10 +689,10 @@ img {
 	.number_container {
 		width: 7.5rem;
 		height: 7.5rem;
+		margin-left: 3.5rem;
 	}
 
-
-	.usageItem_header .number {
+	.usage_article .number {
 		font-size: 1.5rem;
 	}
 
@@ -914,10 +916,12 @@ img {
 
 	.usage_article {
 		width: 100%;
+		height: 100%;
 		position: relative;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
+		align-items: center;
 		}
 
 	.usage_article:nth-child(2)  {
@@ -928,6 +932,9 @@ img {
 	.usagePicture_container {
 		display: block;
 		width: 50%;
+		max-width: 50%;
+		flex-grow: 0;
+		flex-shrink: 0;
 		position: relative;
 	}
 
@@ -938,61 +945,55 @@ img {
 
 
 	.usageText_container {
-		width: 50%;
 		display: flex;
 		flex-direction: column;
+		flex-wrap: nowrap;
+		box-sizing: border-box;
 		justify-content: center;
+		align-self: stretch;
 	}
 
-	.usageItem_header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		height: 8.4rem;
-	
+	.usage_article:nth-child(odd) .usageText_container {
+		padding-right: 2.5rem;
 	}
 
-	.usage_article:nth-child(odd) .usageItem_header .number_container {
-			margin-left: -4.2rem;
-	}	
-
-	.usage_article:nth-child(even) .usageItem_header {
-			
-		justify-content: flex-end;
+	.usage_article:nth-child(even) .usageText_container {
+		padding-left: 2.5rem;
 	}
 
-	.usage_article:nth-child(even) .usageItem_header .number_container {
-
-		order: 2;
-		margin-right: -4.2rem;
-	}
 
 
 	.number_container {
-		min-width: 8.4rem;
-		min-height: 8.4rem;
+		width: 8.4rem;
+		height: 8.4rem;	
+		flex-shrink: 0;
+	}
+
+	.usage_article:nth-child(odd) .number_container {
+		transform: translateX(-4.2rem);
+	}
+
+	.usage_article:nth-child(even) .number_container {
+		transform: translateX(4.2rem);
 	}
 
 
-	.usageItem_header .number {
+
+	.usage_article .number {
 		font-size: 1.2rem;
+
 	}
 
-	.usageItem_header .h3 {
+	.usage_article .h3 {
 		font-size: 4rem;
-	}
+		transform: translateY(2.2rem);
+		box-sizing: border-box;
+		height: 50%;
+		flex-shrink: 0;
+		display: flex;
+		align-items: flex-end;
 
-	.usage_article:nth-child(odd) .h3 {
-			padding-left: 2rem;
-			padding-right: 10rem;
 	}
-
-	.usage_article:nth-child(even) .h3 {
-			padding-right: 2rem;
-			padding-left: 10rem;
-			text-align: right;
-	}
-
 
 	.usage_content {
 		display: block;
@@ -1000,22 +1001,9 @@ img {
 		box-sizing: border-box;
 		width:100%;
 		font-size: 1.2rem;
-		margin-top: 3.5rem;
+		padding-top: 3.5rem;
+		height: 50%;
 	}
-
-
-
-	.usage_article:nth-child(odd) .usage_content {
-		padding-right: 10rem;
-		padding-left: 6.2rem;
-	}
-
-	.usage_article:nth-child(even) .usage_content {
-		padding-right: 6.2rem;
-		padding-left: 10rem;
-		text-align: right;
-	}
-
 
 
 	/*---------------------Футер------------------*/
