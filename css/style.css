@@ -238,7 +238,6 @@ img {
 
 .number_container {
 	display: flex;
-	position: relative;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -462,18 +461,22 @@ img {
 	}
 
 	.number_container {
+		position: relative;
+		z-index: 1;
 		width: 5rem;
 		height: 5rem;
 		margin-left: 1.43rem;
+		margin-top: -4.14rem;
 	}
 
 	.usage_article .h3 {
-		margin: 1.93rem 0px;
+		margin-bottom:1.93rem;
 	}
 
 	.usageText_container {
 		padding-left: 1.43rem;
 		padding-right: 1.43rem;
+		margin-top: 6.57rem;
 	}
 
 
@@ -678,18 +681,22 @@ img {
 	}
 
 	.usage_article .h3 {
-		margin: 27px 0px;
+		margin: 0rem 0rem 1.69rem 0rem;
 	}
 
 	.usageText_container {
 		padding-left:3.5rem;
 		padding-right: 3.5rem;
+		padding-top: 5.62rem;
 	}
 
 	.number_container {
+		position: relative;
 		width: 7.5rem;
 		height: 7.5rem;
 		margin-left: 3.5rem;
+		margin-top: -5rem;
+		z-index: 1;
 	}
 
 	.usage_article .number {
@@ -921,7 +928,7 @@ img {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		align-items: center;
+		align-items: flex-end;
 		}
 
 	.usage_article:nth-child(2)  {
@@ -946,35 +953,49 @@ img {
 
 	.usageText_container {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
+		position: absolute;
+		padding-bottom: 2.5rem;
+		top: calc(50% - 4.2rem);
+		width: 50%;
+		flex-wrap: wrap;
+		height: calc(50% + 4.2rem);
+		flex-direction: row;
 		box-sizing: border-box;
-		justify-content: center;
-		align-self: stretch;
+		justify-content: flex-start;
 	}
 
 	.usage_article:nth-child(odd) .usageText_container {
 		padding-right: 2.5rem;
+		padding-left: 6.4rem;
+		left:50%;
 	}
 
 	.usage_article:nth-child(even) .usageText_container {
 		padding-left: 2.5rem;
+		padding-right: 6.4rem;
+		right:50%;
 	}
+	
 
 
 
 	.number_container {
+		position: absolute;
+		z-index: 1;
 		width: 8.4rem;
 		height: 8.4rem;	
 		flex-shrink: 0;
+		top: calc(50% - 4.2rem);
+
 	}
 
 	.usage_article:nth-child(odd) .number_container {
-		transform: translateX(-4.2rem);
+		transform: translateX(4.2rem);
+		right:0;
 	}
 
 	.usage_article:nth-child(even) .number_container {
-		transform: translateX(4.2rem);
+		transform: translateX(-4.2rem);
 	}
 
 
@@ -986,24 +1007,29 @@ img {
 
 	.usage_article .h3 {
 		font-size: 4rem;
-		transform: translateY(2.2rem);
 		box-sizing: border-box;
-		height: 50%;
-		flex-shrink: 0;
+		height: 8.4rem;
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 
 	}
 
 	.usage_content {
 		display: block;
 		position: relative;
-		box-sizing: border-box;
-		width:100%;
+		width: 100%;
 		font-size: 1.2rem;
-		padding-top: 3.5rem;
-		height: 50%;
+		margin-top: 3.5rem;
+		margin-bottom: 0;
 	}
+
+	@media (max-width: 1240px) {
+		.usage_content {
+			margin-top: 0.5rem;
+			align-self: flex-end;
+			}
+	}
+	
 
 
 	/*---------------------Футер------------------*/
